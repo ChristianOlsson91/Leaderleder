@@ -1,0 +1,92 @@
+	html, body, #map {
+		padding:0;
+		margin:0;
+		height:100%;
+    }
+	
+	h3{
+		color:green;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+    #HomeButton {
+		position: absolute;
+		top: 95px;
+		left: 20px;
+    }
+	
+	#LocateButton {
+		position: absolute;
+		top: 140px;
+		left: 20px;
+    }
+	
+	#basemapGallery {
+		position: absolute;
+		top: 20px;
+		left: 120px;
+	}
+	
+	#buttonPanel{
+		position: absolute;
+		padding: 12px 12px;
+		top: -10px;
+		left: 50px;
+		height: 50px;
+	}
+
+	.panelButton1{
+		position: absolute;
+		background: url(images/vandring/vandring.png);
+		height: 25px;
+		width: 30px;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #67686f;
+	}
+
+	li {
+		float: left;
+	}
+
+	.dropbtn  {
+		display: inline-block;
+		font-weight: bold;
+		color: #ffffff;
+		border: 2px solid #ccffff;
+		background-color: #000066;
+		text-align: center;
+		height: 40px;
+		width: 120px;
+		text-decoration: none;
+	}
+
+	li.dropbtn:hover {background-color: #00cc66}
+
+	li.dropdown:hover .dropbtn:hover{
+		display:block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #6699ff;
+		text-align: center;
+	}
+	
+	.dropdown-content :hover {background-color: #ccff33}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	
+	.menubutton{
+		text-align: center;
+		height: 40px;
+		width: 120px;
+	}

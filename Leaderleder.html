@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>Leaderleder</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/esri/css/esri.css">
+	<link href="style.css" rel =" stylesheet" type="text/css">
+  <script src="https://js.arcgis.com/3.16/"></script>
+  <script src="script.js"></script>
+
+ 
+</head>
+	<body>
+	<div data-dojo-type="dijit/layout/BorderContainer" 
+		 data-dojo-props="design:'headline', gutters:false" 
+		 style="width:100%;height:100%;margin:0;">
+	<div id="map" class="map"  data-dojo-type="dijit/layout/ContentPane" 
+        data-dojo-props="region:'center'" 
+        style="padding:0;">
+			   <div style="position:absolute; right:20px; top:10px; z-index:50;">
+        <div data-dojo-type="dijit/TitlePane" 
+             data-dojo-props="title:'Ändra baskarta', closable:false, open:false">
+          <div data-dojo-type="dijit/layout/ContentPane" style="width:380px; height:280px; overflow:auto;">
+            <div id="basemapGallery"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div id="buttonPanel">
+			<ul>
+			<li class="dropdown">
+			<button class="dropbtn" >Vandringsled</button>
+				<div class="dropdown-content">
+					<input type="button" class="menubutton" id="buttonEtapp11" value="Etapp 11">
+					<input type="button" class="menubutton" id="buttonEtapp12" value="Etapp 12">
+					<input type="button" class="menubutton" id="buttonEtapp13" value="Etapp 13">
+					<input type="button" class="menubutton" id="buttonEtapp14" value="Etapp 14">
+					<input type="button" class="menubutton" id="buttonEtapp15" value="Etapp 15">
+					<input type="button" class="menubutton" id="buttonEtapp16" value="Etapp 16">
+					<input type="button" class="menubutton" id="buttonEtapp17" value="Etapp 17">
+					<input type="button" class="menubutton" id="buttonEtapp19" value="Etapp 19">
+					<input type="button" class="menubutton" id="buttonEtapp20" value="Etapp 20">
+					<input type="button" class="menubutton" id="buttonEtapp21" value="Etapp 21">
+					<input type="button" class="menubutton" id="buttonEtapp22" value="Etapp 22">
+					
+					<input type="button" class="menubutton" id="buttonEtappSlinga11" value="Slinga 11">
+					<input type="button" class="menubutton" id="buttonEtappSlinga12a" value="Slinga 12.1">
+					<input type="button" class="menubutton" id="buttonEtappSlinga12b" value="Slinga 12.2">
+					<input type="button" class="menubutton" id="buttonEtappSlinga21" value="Slinga 21">
+					
+					<input type="button" class="menubutton" id="buttonBikingElevation_b" value="Walk elevation 1">
+					<input type="button" class="menubutton" id="buttonWalkElevation" value="Walk elevation 2">
+		
+				</div>
+			</li>
+			
+			<li class="dropdown">
+			<button class="dropbtn" >Cykelled</button>
+				<div class="dropdown-content">
+					<input type="button" class="menubutton" id="buttonBikingElevation_a" value="Cykelled">
+				</div>
+			</li>
+			
+			<li class="dropdown">
+			<button class="dropbtn" >Kanot</button>
+				<div class="dropdown-content">
+					<input type="button" class="menubutton" id="buttonGysinge" value="Gysinge">
+					<input type="button" class="menubutton" id="buttonFarnebofjarden" value="Färnebofjärden">
+					<input type="button" class="menubutton" id="buttonHedesundafjarden" value="Hedesundafjärden">
+				</div>
+			</li>
+			
+			<li class="dropdown">
+			<button class="dropbtn" >Lägg till POI</button>
+				<div class="dropdown-content">
+					<input type="button" class="menubutton"  id="button1" value="Infomation">
+					<input type="button" class="menubutton"  id="button2" value="Rastplats">
+					<input type="button" class="menubutton"  id="button3" value="Matplats">
+					<input type="button" class="menubutton"	 id="off" value="Stäng av">
+				</div>
+			</li>
+			<!--<li class="dropdown">
+			<button class="dropbtn" id="resetButton">Släck alla leder</button>
+			</li>-->
+			</ul>
+		</div>
+		
+		<div id="HomeButton"></div>
+		<div id="LocateButton"></div>
+	
+</body>
+</html>
